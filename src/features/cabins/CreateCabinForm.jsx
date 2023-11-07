@@ -104,7 +104,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
           defaultValue={0}
           {...register("discount", {
             validate: (value) =>
-              value <= getValues().regularPrice ||
+              value < getValues().regularPrice ||
               "Discount can`t be bigger than regular price ",
           })}
         />
