@@ -12,7 +12,6 @@ import FormRow from "../../ui/FormRow";
 function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
   const { id: editId, ...editValues } = cabinToEdit;
   const isEditSession = Boolean(editId);
-  console.log(isEditSession);
   const { register, handleSubmit, reset, getValues, formState } = useForm({
     defaultValues: isEditSession ? editValues : {},
   });
@@ -43,7 +42,6 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
         }
       );
     // mutate({ ...data, image: data.image[0] });
-    console.log(data);
   }
   function onError(errors) {
     console.log(errors);

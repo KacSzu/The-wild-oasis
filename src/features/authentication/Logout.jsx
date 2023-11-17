@@ -2,7 +2,6 @@ import { HiArrowRightOnRectangle } from "react-icons/hi2";
 import ButtonIcon from "../../ui/ButtonIcon";
 import { useLogout } from "./useLogout";
 import styled from "styled-components";
-import Spinner from "../../ui/Spinner";
 import SpinnerMini from "../../ui/SpinnerMini";
 const FullPage = styled.div`
   height: 100dvh;

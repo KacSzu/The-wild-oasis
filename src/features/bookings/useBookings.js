@@ -28,7 +28,7 @@ export function useBookings() {
   });
 
   //PRE-FETCHING
-  const pageCount = Math.ceil(page * PAGE_SIZE);
+  const pageCount = Math.ceil(count / PAGE_SIZE);
   if (page < pageCount)
     queryClient.prefetchQuery({
       queryKey: ["bookings", filter, sortBy, page + 1],
